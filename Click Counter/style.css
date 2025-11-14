@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Score Section */
+.score-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.score-box h2 {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.score {
+    margin-top: 5px;
+    font-size: 3rem;
+    color: #4ecdc4;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(78, 205, 196, 0.5);
+}
+
+/* Timer Section */
+.timer-section h2 {
+    font-size: 1.3rem;
+}
+
+#timer {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #ffcb77;
+    text-shadow: 0 0 15px rgba(255, 203, 119, 0.6);
+}
+
+/* Buttons Layout */
+.button-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Base Button */
+.btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Start Button */
+.start-btn {
+    background: #4ecdc4;
+    border-color: #4ecdc4;
+    color: #1b1b1b;
+}
+
+.start-btn:hover {
+    background: #3fc5bd;
+}
+
+.click-btn {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.click-btn:hover {
+    background: #ff5252;
+}
+
+/* Disabled state */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Status Message */
+.status-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.click-per-sec{
+    padding: 10px;
+    opacity: 0.8;
+}
